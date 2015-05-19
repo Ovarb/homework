@@ -1,0 +1,141 @@
+/* css reset */
+* { margin: 0; padding: 0; outline: 0; }
+html {height: 100%}
+body {height: inherit}
+
+/* ----------------------------------common styles--------------------------------------- */
+
+body {
+    font-size: 12px;
+    line-height: 1,5;
+    font-family: arial, sans-serif;
+    color: #808080;
+    min-width: 800px;
+}
+
+a { color: #65cbf8; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3, h4, h5 {
+	font-family: Georgia;
+}
+
+
+
+p  { 
+	font-family: Arial;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 14px;
+  	line-height: 18px;
+}
+
+h2 {
+	margin-top: 30px;
+	font-size: 26px;
+	color: #808080;
+}
+
+.main_container{
+	margin: 0 auto;
+	width: 950px;
+	border: 1px dotted red;
+}	
+
+.butt {
+	display: block;
+	vertical-align: top;
+	color: #77777b;
+	font-size: 11px;
+	text-transform: capitalize; 
+	font-weight: bold;
+ 	border: 1px dotted gray;
+}
+
+.butt:hover {
+	color: rgb(255, 0, 0); 
+	text-decoration: none;
+ 
+}
+
+.clearer {
+clear: both
+}
+
+/* ------------------------------------header---------------------------------------------- */
+.header { 
+	background: rgb(238, 238, 238);
+	padding: 30px 0px;
+	border: 1px dotted gray;
+}
+
+/* centered menu_block made by main_container */
+
+/* right logo_brick */
+.logo_brick {    
+    width: 171px; 
+    height: 28px;
+	display: block;
+	background: url(../images/logo.png) no-repeat 0 0;
+	float: left;
+	border: 1px dotted gray;	
+}
+
+/* left nav_brick */
+/* button styled by butt selector in common styles */
+.nav_brick {
+	float: right;
+	padding-top: 8px;
+	border: 1px dotted gray;
+}
+
+
+.nav_butt {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 0 44px;
+}
+
+/* ------------------------------------------------main content------------------------------------------ */
+
+.content_row {
+	margin-top: 40px;
+	border: 1px solid black;
+}
+
+.content_illustration {
+	display: block;
+	width: 300px;
+	min-height: 1px;
+	float: left;
+	border: 2px dotted red;
+}
+	
+.content_pic {
+	margin: 30px 0px 3px 0px;
+}
+
+.content_article {
+	display: block;
+	width: 600px;
+	float: right;
+	border: 2px dotted red;
+}
+.content_article  h2, p {
+	color: #000;
+}
+
+
+/* --------------------------------------------footer---------------------------------------- */
+.footer {
+	margin-top: 40px;
+	line-height: 20px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px dotted gray;
+}
+.signature {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
