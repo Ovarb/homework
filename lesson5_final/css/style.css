@@ -1,7 +1,22 @@
 /* css reset */
-* { margin: 0; padding: 0; outline: 0; }
-html {height: 100%}
-body {height: inherit}
+* { 
+	margin: 0; 
+	padding: 0; 
+	outline: 0; 
+}
+
+html, body {
+	height: 100%
+}
+
+.main_posts {
+  padding-bottom: 110px;
+}
+
+.page {
+  position: relative;
+  min-height: 100%;
+}
 
 /* common styles */
 
@@ -13,14 +28,19 @@ body {
     min-width: 800px;
 }
 
-a { color: #65cbf8; text-decoration: none; cursor: pointer; }
-a:hover { text-decoration: underline; }
+a { 
+	color: #65cbf8; 
+	text-decoration: none; 
+	cursor: pointer; 
+}
+
+a:hover {
+	text-decoration: underline;
+}
 
 h1, h2, h3, h4, h5 {
 	font-family: Georgia;
 }
-
-
 
 p  { 
 	font-family: Arial;
@@ -28,12 +48,6 @@ p  {
 	margin-bottom: 10px;
 	font-size: 14px;
   	line-height: 18px;
-}
-
-h2 {
-	margin-top: 30px;
-	font-size: 26px;
-	color: #808080;
 }
 
 .main_container{
@@ -53,11 +67,6 @@ h2 {
 .butt:hover {
 	color: rgb(255, 0, 0); 
 	text-decoration: none;
- 
-}
-
-.clearer {
-clear: both
 }
 
 /* header */
@@ -67,8 +76,14 @@ clear: both
 }
 
 /* centered menu_block made by main_container */
-
 /* right logo_brick */
+
+.menu_block:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
 .logo_brick {    
     width: 171px; 
     height: 28px;
@@ -79,11 +94,11 @@ clear: both
 
 /* left nav_brick */
 /* button styled by butt selector in common styles */
+
 .nav_brick {
 	float: right;
 	padding-top: 8px;
 }
-
 
 .nav_butt {
 	display: inline-block;
@@ -93,56 +108,63 @@ clear: both
 
 /* main content */
 
-.content_row {
-	margin-top: 40px;
+.post_row {
+	margin-top: 20px;
 }
 
-.content_illustration {
+.post_row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.post_illustr {
 	display: block;
 	width: 300px;
 	float: left;
+	overflow: hidden;
 }
 	
-.content_pic {
-	margin: 30px 0px 3px 0px;
+.post_illustr_pic {
+	margin: 0 0;
 }
 
-.content_pic_tag  h3 {
-	font-family: Arial;
-	font-size: 10px;"
-	border: 1px dotted black;
+.post_illustr_pic_tag {
+	font-size: 13px;
 }
 	
-.content_article {
+.post_article {
 	display: block;
 	width: 600px;
 	float: right;
 }
-.content_article  h2, p {
+
+.post_article_headline  {
+	font-size: 26px;
 	color: #000;
 }
 
+.post_article_text  {
+	color: #000;
+}	
 	
-	
-/* Это комментарий */
-
-/* Это комментарий */
-
-/* Это комментарий */
-
-/* Это комментарий */
-
-/* Это комментарий */
-
 /* footer */
+
 .footer {
-	margin-top: 40px;
+	background: rgb(238, 238, 238);
+	margin-top: 10px;
 	line-height: 20px;
 	text-align: center;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
 }
+
 .signature {
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
