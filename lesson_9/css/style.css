@@ -1,147 +1,148 @@
-/* css reset */
+/************************ css reset ******************************/
 * { 
 	margin: 0; 
 	padding: 0; 
 	outline: 0; 
 }
-
-
-
-/* common styles */
+/************************ common styles ******************************/
+@import "http://webfonts.ru/import/permian.css";
+body {
+	background: #f8f8f8;
+	font-family: Georgia;
+}
+a {
+	font-size: 11px;
+	color: #515151;
+	}
 .main_container {
-		margin: 0 auto;  
-		width: 970px;
-		border: 1px solid magenta;
-
+	margin: 0 auto;  
+	width: 980px;
 }   	
-
-
-
-
+.main_container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
 /************************ auth ******************************/
 .auth_area {
-	background: rgb(200, 200, 200);
+	padding: 6px 0;
+	background: #ececec;
 }
-
-.auth {
-	height: 30px;
-	border: 1px dotted red;
-}
-
-.auth_block {
-	width: 300px;
-	float: right;
-	border: 1px dotted red;
-}
-
 .auth_menu {
-	float:left;
-	border: 1px dotted red;
+	float:right;
+	margin-right: 112px;
 }
-
+.link {
+	border-bottom: 1px solid #b4b4b4;
+	text-decoration: none;
+}
+.auth_menu  .link {
+	display: inline-block;
+	margin-left: 10px;
+}
 .lang_menu {
 	float:right;
-	border: 1px dotted red;
 }
-
-.auth:after {
-	content: "";
-	display: block;
-	clear: both;
+.lang_menu  .link {
+	display: inline-block;
+	margin-left: 2px;
+	padding: 2px;
 }
-
-
+.lang_menu  .active_link {
+	background: #72add2;
+	color: #fff;
+	border-bottom: none;
+}
 /************************ header ******************************/
 .header_area {
-	background: rgb(240, 240, 240);
+	padding: 34px 0 20px 0;
+	background: fbfbfb;
 }
-
-.header {
-	height: 130px;
-	border: 1px dotted red;
-}
-
-.header_logo_block {    
-	float: left;
-	border: 1px dotted red;
-}
-
-.header_service_block { 
-	float: right;
-	border: 1px dotted red;
-}
-
-.header_contact_block {
-	border: 1px dotted red;
-}
-
-.header_phone {
-	float: right;
-	border: 1px dotted red;
-}
-
-.header_contact_block:after {
-	content: "";
+.header_logo_block_pic {    
+    width: 186px; 
+    height: 82px;
 	display: block;
-	clear: both;
+	background: url(../images/logo_forum_texted.png) no-repeat 0 0;
+	float: left; 
+}
+.header_info_caption {
+	display: inline-block;
+	float: right;
+	font-size: 11px;
+	font-style: italic;
+	line-height: 18px;
+	text-align: right;
+	margin-right: 20px;
+	color: #515151;
+}
+.comment {
+	color: #999999;
+}
+.header_info_phone {
+	display: inline-block;
+	float: right;
+	font-family: 'Permian Serif';
+	font-size: 36px;
+	line-height: 37px;
+	color: #6699cc;
+	margin-right: 42px;
 }
 .header_menu {
-	border: 1px dotted red;
+	float: right;
+	margin-top: 40px;
 }
-
-.header:after {
-	content: "";
-	display: block;
-	clear: both;
+.nav_butt {
+	display: inline-block;
+	font-family: 'Permian Serif';
+	font-size: 14px;
+	color: #666666;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 30px;
 }
-
+.nav_butt:last-child {
+	margin-right: 0px;
+}
+.header_menu .active_butt {
+	color: #56a7d4;
+}
 /************************ jumbo ******************************/
 .jumbo_area {
 	background: rgb(155, 167, 17);
 }
-
 .jumbo {
 	height: 400px;
-	border: 1px dotted red;
+/* border: 1px dotted red; */
 }
-
 /*************************** main content ***************************/
 .main_area {
 	background: rgb(240, 240, 240);
 }
-
 .main_content {
 	border: 1px dotted red;
 }
-
 .left_column {
 	float: left;
 	width: 630px;
 	border: 1px dotted red;
-
 }
-	
 .right_column {
 	float: right;
 	width: 300px;
 	border: 1px dotted red;
 }
-
 .main_content:after {
 	content: "";
 	display: block;
 	clear: both;
 }
-
 /************************ partners ******************************/
 .partners_area {
 	background: rgb(85, 85, 85);
 }
-
 .partners  {
 	border: 1px dotted red;
 }
-
 .partner_block {
 	display: inline-block;
 	vertical-align: top;
@@ -150,7 +151,6 @@
 	border: 1px solid green;
 	float: left;
 }
-
 .partner_logo  a{
 	text-align: center;
 	border: 1px dotted red;
@@ -159,7 +159,6 @@
 	text-align: center;
 	border: 1px dotted red;
 }
-
 .partners:after {
 	content: "";
 	display: block;
@@ -169,16 +168,13 @@
 .footer_area {
 	background: rgb(200, 200, 17);
 }
-
 .footer  {
 	border: 1px dotted red;
 }
-
 /************************ footer ******************************/
 .sign_area {
 	background: rgb(200, 100, 10);
 }
-
 .sign  {
 	border: 1px dotted red;
 }
