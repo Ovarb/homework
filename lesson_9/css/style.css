@@ -6,18 +6,23 @@
 }
 /************************ common styles ******************************/
 @import "http://webfonts.ru/import/permian.css";
+/************************ PermianSerifTypeface ******************************/
 body {
 	background: #f8f8f8;
 	font-family: Georgia;
+	font-size: 12px;
 	max-width: 1840px;
 }
 a {
 	font-size: 11px;
 	color: #515151;
-	}
+}
+h1, h2, h3, h4, h5 {
+	font-family: PermianSerifTypeface;
+}
 .main_container {
 	margin: 0 auto;  
-	width: 980px;
+	max-width: 980px;
 }   	
 .main_container:after {
 	content: "";
@@ -56,7 +61,7 @@ a {
 }
 /************************ header ******************************/
 .header_area {
-	padding: 34px 0 20px 0;
+	padding: 35px 0 20px 0;
 	background: fbfbfb;
 }
 .header_logo_block_pic {    
@@ -73,7 +78,6 @@ a {
 	font-style: italic;
 	line-height: 18px;
 	text-align: right;
-	margin-right: 20px;
 	color: #515151;
 }
 .comment {
@@ -82,11 +86,12 @@ a {
 .header_info_phone {
 	display: inline-block;
 	float: right;
-	font-family: 'Permian Serif';
-	font-size: 36px;
+	font-family: PermianSerifTypeface;
+	font-size: 37px;
 	line-height: 37px;
 	color: #6699cc;
-	margin-right: 42px;
+	margin: 0 35px 0 8px;
+	
 }
 .header_menu {
 	float: right;
@@ -94,7 +99,7 @@ a {
 }
 .nav_butt {
 	display: inline-block;
-	font-family: 'Permian Serif';
+	font-family: PermianSerifTypeface;
 	font-size: 14px;
 	font-weight: bold;
 	color: #666666;
@@ -116,7 +121,7 @@ a {
 /************************ jumbo ******************************/
 .jumbo_area {
 	background: url(../images/jumbo_01.gif) no-repeat center;
-	font-family: Times;
+	font-family: PermianSerifTypeface;
 }
 .jumbo {
 	height: 370px;
@@ -131,54 +136,139 @@ a {
 }
 .jumbo_host {
 	float: right;
-	height: 339px;
-	width: 313px;
+	height: 327px;
+	width: 297px;
 	font-size: 13px;
-	background: url(../images/host_forum.png) no-repeat;
+	background: url(../images/host_forum.png) no-repeat right bottom;
 	margin-top: 20px;
 }
-.jumbo_host_person {
+.jumbo_host_column {
 	float: right;
-	width: 110px;
-	margin-top: 40px;
-	padding-right: 15px;
-	border: 1px dotted red;
-
+	width: 125px;
+	margin-top: 20px;
+	padding-right: 0px;
+}
+.jumbo_host_person {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.jumbo_host_person_title {
+	font-size: 11px;
+	color: #999999;
 }
 .jumbo_host_speach {
 	float: right;
-	margin-top: 100px;
-	padding-right: 30px;
-	padding-left: 20px;
-	border: 1px dotted red;
-
+	margin-top: 90px;
+	line-height: 18px;
+	font-size: 11px;
+	padding-right: 20px;
+	padding-left: 15px;
+}
+.jumbo_host_speach  a {
+	color: #0099cc;
+	text-decoration: underline;
 }
 .jumbo_host_person .host_name {
 	font-size: 20px;
-
 }
 /*************************** main content ***************************/
 .main_area {
-	background: rgb(240, 240, 240);
+	background: #f8f8f8;
+	padding: 20px 0;
 }
 .main_content {
 	border: 1px dotted red;
 }
-.left_column {
+.main_wide_block {
 	float: left;
-	width: 630px;
+	width: 68%;
 	border: 1px dotted red;
 }
-.right_column {
+.main_narrow_block {
 	float: right;
-	width: 300px;
+	width: 30%;
+	margin-left: 10px;
 	border: 1px dotted red;
 }
-.main_content:after {
+.wide_post {
+	min-height: 270px;
+	margin: 25px 0 25px 0;
+	border: 1px dotted red;
+}
+.wide_post:after {
 	content: "";
 	display: block;
 	clear: both;
 }
+.narrow_post {
+	height: 270px;
+	margin: 25px 0 25px 0;
+	border: 1px dotted red;
+}
+.post_headline {
+	font-size: 20px;
+	text-align: left;
+}
+.entree {
+	float: left;
+	width: 48%;
+	padding: 3px 10px 3px 0;
+}
+.entree_illustr {
+	float: left;
+	margin-right: 10px;
+}
+.post_data{
+	font-size: 11px;
+	color: #999999;
+	font-style: italic;
+	margin-bottom: 12px;
+}
+.post_link{
+	font-size: 14px;
+	color: #0099cc;
+	text-decoration: underline;
+	line-height: 18px;
+}
+.post_annotation{
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 12px;
+}
+.entree .active_link {
+	color: #cc0000;
+}
+.participants_showcase {
+	margin: 5px 0px;
+	padding: 5px 15px 5px 15px;
+	border: 1px solid #e9e9e9;
+	background: #fcfcfc;
+}
+.participants_showcase:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.entree_illustr {
+	margin-top: 5px;
+}
+.participants_showcase .post_link {
+	font-size: 14px;
+	color: #0099cc;
+	text-decoration: underline;
+	line-height: 18px;
+}
+.participants_showcase .post_annotation {
+	margin-top: 6px;
+	font-size: 10px;
+	color: #909090;
+	text-style: italic;
+	line-height: 18px;
+}
+.participants_showcase  .entree {
+	margin: 4px 0 8px 0;
+}
+
 /************************ partners ******************************/
 .partners_area {
 	background: rgb(85, 85, 85);
