@@ -9,6 +9,7 @@
 body {
 	background: #f8f8f8;
 	font-family: Georgia;
+	max-width: 1840px;
 }
 a {
 	font-size: 11px;
@@ -95,10 +96,11 @@ a {
 	display: inline-block;
 	font-family: 'Permian Serif';
 	font-size: 14px;
+	font-weight: bold;
 	color: #666666;
 	text-transform: uppercase;
 	text-decoration: none;
-	margin-right: 30px;
+	margin-right: 27px;
 }
 .nav_butt:last-child {
 	margin-right: 0px;
@@ -106,13 +108,54 @@ a {
 .header_menu .active_butt {
 	color: #56a7d4;
 }
+.header_menu_subline{
+	background: #666666;
+	height: 35px;
+	border-top: 1px solid #000000;
+}
 /************************ jumbo ******************************/
 .jumbo_area {
-	background: rgb(155, 167, 17);
+	background: url(../images/jumbo_01.gif) no-repeat center;
+	font-family: Times;
 }
 .jumbo {
-	height: 400px;
+	height: 370px;
 /* border: 1px dotted red; */
+}
+.jumbo_headline {
+	float: left;
+	font-size: 16px;
+	color: #000000;
+	text-transform: uppercase;
+	margin-top: 65px;
+}
+.jumbo_host {
+	float: right;
+	height: 339px;
+	width: 313px;
+	font-size: 13px;
+	background: url(../images/host_forum.png) no-repeat;
+	margin-top: 20px;
+}
+.jumbo_host_person {
+	float: right;
+	width: 110px;
+	margin-top: 40px;
+	padding-right: 15px;
+	border: 1px dotted red;
+
+}
+.jumbo_host_speach {
+	float: right;
+	margin-top: 100px;
+	padding-right: 30px;
+	padding-left: 20px;
+	border: 1px dotted red;
+
+}
+.jumbo_host_person .host_name {
+	font-size: 20px;
+
 }
 /*************************** main content ***************************/
 .main_area {
