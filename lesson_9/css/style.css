@@ -11,12 +11,14 @@ body {
 	background: #f8f8f8;
 	font-family: Georgia;
 	font-size: 12px;
-	text-shadow: 0px 0px 1px #aaa;
-	max-width: 1840px;
 }
 a {
 	color: #0099cc;
 	text-decoration: underline;
+}
+a:hover{
+	color: #cc0000;
+	text-decoration: none;
 }
 h1, h2, h3, h4, h5 {
 	font-family: PermianSerifTypeface;
@@ -68,12 +70,9 @@ h1, h2, h3, h4, h5 {
 	padding: 35px 0 20px 0;
 	background: fbfbfb;
 }
-.header_logo_block_pic {    
-    width: 186px; 
-    height: 82px;
-	display: block;
-	background: url(../images/logo_forum_texted.png) no-repeat 0 0;
+.logo_block {    
 	float: left; 
+	margin: 10px 0px 0 0px;
 }
 .header_info_caption {
 	display: inline-block;
@@ -283,14 +282,8 @@ h1, h2, h3, h4, h5 {
 	left: 0;
 }
 .menu_item {
-	margin-left: 30px;
-}
-.enroll_menu_item:last-child {
-	margin-left: 0px;
-}
-.enroll_menu {
+	margin: 8px 18px 0px 30px;
 	float: right;
-	margin: 8px 18px 0px 0px;
 }
 .organisers h4 {
 	margin: 0px 0px 8px 0px;
@@ -304,7 +297,7 @@ h1, h2, h3, h4, h5 {
 	background: #ffffff;
 	width: 152px;
 	height: 100px;
-	margin: 13px auto 0px auto;
+	margin: 13px auto 2px auto;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: left;
@@ -359,6 +352,50 @@ h1, h2, h3, h4, h5 {
 	line-height: 22px;
 }
 /************************ partners ******************************/
+/* .partner_brick_1 {
+	display: inline-block;
+	float: left;
+	font-size: 10px;
+	color: #fff;
+	text-decoration: none;	
+	width: 135px;
+	height: 100px;
+	padding: 0px 5px 0px 5px;
+	margin: 20px 9px 17px 9px;
+	text-align:  center;
+	vertical-align: bottom;
+} */
+.brick {
+	float: left;
+	width: 135px;
+	height: 100px;
+	padding: 0px 5px 0px 5px;
+	margin: 20px 9px 17px 9px;
+	text-align: center;
+}
+.brick_top {
+	border: 1px dotted white;
+	width: 133px;
+	height: 50px;
+	margin: 0px auto;
+}
+.brick_logo  {
+	border: 1px dotted white;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px auto;
+}
+.brick_bottom {
+	display: block;
+	font-size: 10px;
+	color: #fff;
+	text-decoration: none;
+	margin: 17px 0px 0px 0px;
+}
+
+
+
+
 .partner_brick {
 	display: inline-block;
 	float: left;
@@ -429,7 +466,6 @@ h1, h2, h3, h4, h5 {
 .p_rusrep_01 {
 	background: url("../images/logo_sprite.png") no-repeat -831px -272px;
 }
-
 .partners_area {
 	background: #666666;
 	color: #ffffff;
@@ -437,10 +473,13 @@ h1, h2, h3, h4, h5 {
 }
 .partners  h4 {
 	font-size: 22px;
-	border-top: 1px dotted #000000;
-	border-bottom: 1px dotted #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
 	padding: 20px 0px 20px 5px;
 	margin: 0px 0px 0px 0px;
+}
+.bricks_block {
+	border-top: 1px solid #717171;
 }
 .x6_block {
 	float: left;
@@ -519,8 +558,7 @@ h1, h2, h3, h4, h5 {
 	border-top: 6px solid #cccccc;
 	padding: 30px 0 20px 0;
 }
-.footer_menu_item {
-	display: block;
+.menu_title {
 	color: #666666;
 	font-size: 12px;
 	text-decoration: none;
@@ -550,7 +588,6 @@ h1, h2, h3, h4, h5 {
 	font-size: 11px:
 }
 .copyright {
-	display: inline-block;
 	float: left;
 	margin: 10px 30px 0px 0px;
 }
@@ -558,24 +595,11 @@ h1, h2, h3, h4, h5 {
 	color: #666666;
 }
 .madein {
-	display: inline-block;
 	float: right;
 	margin: 10px 0px 10px 0px;
 }
-.icon_small  {
-	width: 16px;
-	height: 16px;
-	margin: 10px 2px;
-}
-.sprite_fb {
-	background: url("../images/icons_sprite.gif") no-repeat 0px 0px;
-}
-.sprite_tw {
-	background: url("../images/icons_sprite.gif") no-repeat -22px 0px;
-}
-.sprite_vk {
-	background: url("../images/icons_sprite.gif") no-repeat -43px 0px;
-}
-.sprite_lj {
-	background: url("../images/icons_sprite.gif") no-repeat -64px 0px;
+.icon_small {
+	display: block;
+	margin: 10px 7px 0px 0px;
+	float: left;
 }
